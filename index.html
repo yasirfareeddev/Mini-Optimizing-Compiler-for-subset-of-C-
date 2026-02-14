@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini C++ Compiler</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="editor-container">
+  <textarea id="code">
+int main() {
+    int a = 10;
+    int b = 20;
+    cout << (a < b);
+    cout << (a == b);
+}
+  </textarea>
+  <button id="compileBtn">Compile</button>
+</div>
+
+<div class="output-panel" id="outputPanel">
+  <div class="panel-header"> 
+    <button id="closeBtn">✖</button> 
+  </div>
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="tokens">Tokens</button>
+    <button class="tab-btn" data-tab="ast">AST</button>
+    <button class="tab-btn" data-tab="tac">TAC</button>
+    <button class="tab-btn" data-tab="optimized_tac">Optimized TAC</button>
+    <button class="tab-btn" data-tab="assembly">Assembly</button>
+    <button class="tab-btn" data-tab="output">Output</button>
+    <button class="tab-btn" data-tab="errors">Errors</button>
+  </div>
+
+  <div class="tab-content active" id="tokens"></div>
+  <div class="tab-content" id="ast"></div>
+  <div class="tab-content" id="tac"></div>
+  <div class="tab-content" id="optimized_tac"></div>
+  <div class="tab-content" id="assembly"></div>
+  <div class="tab-content" id="output"></div>
+  <div class="tab-content" id="errors"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
