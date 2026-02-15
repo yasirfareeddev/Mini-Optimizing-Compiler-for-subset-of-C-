@@ -1,4 +1,4 @@
-# Mini Optimizing Compiler
+# Mini Optimizing Compiler for subset of C++
 
 A single-file educational compiler implementing the complete compilation pipeline for a C++ subset language with emphasis on optimization techniques including constant folding and dead code elimination.
 
@@ -45,14 +45,19 @@ The compiler demonstrates how compile-time analysis can significantly reduce ins
 ## Project Structure
 
 ```
-CompilerProject/
+mini-optimizing-compiler/
 ├── backend/
-│   ├── app.py          # Flask API server
-│   └── compiler.py     # Complete compiler implementation
-├── index.html          # Frontend interface
+│   ├── app.py          # Flask REST API server
+│   └── compiler.py     # Complete compiler implementation (lexer → parser → semantic → TAC → optimization)
+├── docs/
+│   ├── Design_Implementation_Optimization.pdf      # Academic research paper (peer-reviewed format)
+│   └── Compiler_Construction_Project_Documentation.pdf  # Course project documentation with implementation details
+├── index.html          # Web interface (frontend entry point)
 ├── script.js           # Frontend logic and API integration
 ├── style.css           # Styling for web interface
-└── .vscode/            # VS Code configuration
+├── LICENSE             # MIT License
+├── README.md           # Project documentation
+└── .gitignore          # Excluded files configuration
 ```
 
 ## Setup and Execution
