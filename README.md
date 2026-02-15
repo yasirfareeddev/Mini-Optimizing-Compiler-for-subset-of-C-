@@ -73,7 +73,7 @@ mini-optimizing-compiler/
 1. Clone the repository and navigate to the project directory:
 
    ```bash
-   https://github.com/yasirfareeddev/Mini-Optimizing-Compiler-for-subset-of-C-.git
+   git clone https://github.com/yasirfareeddev/Mini-Optimizing-Compiler-for-subset-of-C-.git
    cd Mini-Optimizing-Compiler-for-subset-of-C-
    ```
 
@@ -100,7 +100,7 @@ mini-optimizing-compiler/
 
 5. Usage:
 
-   * Enter source code in the left editor panel
+   * Enter source code in the editor panel
    * Click "Compile" to process the code
    * View results in the right panel: tokens, AST, unoptimized TAC, optimized TAC, assembly, output, and errors
 
